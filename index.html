@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+
+        #num1, #num2,#res{
+
+            background-color: snow;
+            border-color:black;
+            border-radius: 20px;
+            font-size: 15px;
+            margin-top: 12px;
+            };
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+  First number: <input type="text" name="number1" id="num1"><br>
+  Last number: <input type="text" name="number2" id="num2"><br>
+  Result number:<input type="text" name="result" id="res"><br>
+
+  <input type="button" value="Calculate" id="calc">
+  <input type="button" value="+" id="plus">
+   <input type="button" value="-" id="minus">
+
+
+ <script>
+     let num1Field = document.querySelector("#num1");
+     let num2Field = document.querySelector("#num2");
+     let resultField= document.querySelector("#res");
+     let plusField= document.querySelector("#plus");
+     let minusField= document.querySelector("#minus")
+
+
+
+     calc.addEventListener("click",calculate);
+
+
+
+     function calculate(){
+
+         let num1=num1Field.value;
+
+        let num2=num2Field.value;
+
+         let sum=Number(num1)+Number(num2);
+
+         resultField.value= sum;
+
+          console.log(sum);
+
+          }
+
+         /*let number1= document.getElementById("num1").value;
+         let number2= document.getElementById("num2").value;
+         let result= document.getElementById("res").innerHTML
+         result= number1 + number2;
+
+
+    */
+
+
+    </script>
+</body>
+</html>
